@@ -8,7 +8,7 @@
     "backend",
     "frontend"
   ],
-"scripts": {
+  "scripts": {
     "dev": "concurrently \"npm:dev:backend\" \"npm:dev:frontend\"",
     "dev:backend": "npm run dev:backend --workspace=backend",
     "dev:frontend": "npm run dev:frontend --workspace=frontend",
@@ -19,5 +19,8 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "webpack-cli": "^6.0.1"
   }
 }

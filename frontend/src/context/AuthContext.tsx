@@ -1,4 +1,4 @@
-import { createContext, useState, useContext, ReactNode, useEffect } from 'react';
+import { createContext, useState, useContext, type ReactNode, useEffect } from 'react';
 import axios from 'axios';
 
 interface AuthContextType {

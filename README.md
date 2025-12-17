@@ -60,3 +60,5 @@
 *   **Backend:** Node.js, Express.js, TypeScript, PostgreSQL (`pg`), JWT (аутентификация), bcrypt (хеширование).
 *   **Тестирование:** Jest, Supertest.
 *   **Инструменты:** Git, Docker.
+123
+123

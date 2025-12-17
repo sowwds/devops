@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import api from '../services/api';
+import { isAxiosError } from 'axios';
 
 const RegisterPage = () => {
   const [email, setEmail] = useState('');
@@ -14,11 +15,11 @@ const RegisterPage = () => {
     setError('');
     setMessage('');
     try {
-      await axios.post('http://localhost:3000/api/auth/register', { email, password, role: 'ENGINEER' });
+      await api.post('/auth/register', { email, password, role: 'ENGINEER' });
       setMessage('Регистрация успешна! Вы будете перенаправлены на страницу входа.');
       setTimeout(() => navigate('/login'), 2000);
     } catch (err) {
-      if (axios.isAxiosError(err) && err.response?.status === 409) {
+      if (isAxiosError(err) && err.response?.status === 409) {
         setError('Пользователь с такой почтой уже существует.');
       } else {
         setError('Не удалось зарегистрироваться. Попробуйте снова.');

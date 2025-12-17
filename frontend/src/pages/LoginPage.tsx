@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import api from '../services/api';
 import { useAuth } from '../context/AuthContext';
 
 const LoginPage = () => {
@@ -14,7 +14,7 @@ const LoginPage = () => {
     e.preventDefault();
     setError('');
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/login', { email, password });
+      const response = await api.post('/auth/login', { email, password });
       login(response.data.token);
       navigate('/');
     } catch (err) {
