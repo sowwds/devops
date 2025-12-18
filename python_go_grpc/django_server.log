@@ -1,0 +1,180 @@
+Watching for file changes with StatReloader
+[17/Dec/2025 20:23:22] "GET / HTTP/1.1" 200 693
+Not Found: /favicon.ico
+[17/Dec/2025 20:23:23] "GET /favicon.ico HTTP/1.1" 404 2538
+<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+Traceback (most recent call last):
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/views.py", line 27, in index
+    value_b = Client(nginx_addr, crt).roll_die()
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/api/client.py", line 27, in roll_die
+    return self.rpc.RollDie(api_pb2.RollDieRequest()).value
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 1166, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 996, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+[17/Dec/2025 20:23:25] "POST / HTTP/1.1" 200 699
+<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+Traceback (most recent call last):
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/views.py", line 27, in index
+    value_b = Client(nginx_addr, crt).roll_die()
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/api/client.py", line 27, in roll_die
+    return self.rpc.RollDie(api_pb2.RollDieRequest()).value
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 1166, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 996, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+[17/Dec/2025 20:23:26] "POST / HTTP/1.1" 200 699
+<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+Traceback (most recent call last):
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/views.py", line 27, in index
+    value_b = Client(nginx_addr, crt).roll_die()
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/api/client.py", line 27, in roll_die
+    return self.rpc.RollDie(api_pb2.RollDieRequest()).value
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 1166, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 996, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+[17/Dec/2025 20:23:26] "POST / HTTP/1.1" 200 699
+<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+Traceback (most recent call last):
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/views.py", line 27, in index
+    value_b = Client(nginx_addr, crt).roll_die()
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/api/client.py", line 27, in roll_die
+    return self.rpc.RollDie(api_pb2.RollDieRequest()).value
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 1166, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 996, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+[17/Dec/2025 20:23:27] "POST / HTTP/1.1" 200 699
+<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"}"
+>
+Traceback (most recent call last):
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/views.py", line 27, in index
+    value_b = Client(nginx_addr, crt).roll_die()
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/api/client.py", line 27, in roll_die
+    return self.rpc.RollDie(api_pb2.RollDieRequest()).value
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 1166, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 996, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"}"
+>
+[17/Dec/2025 20:23:30] "POST / HTTP/1.1" 200 699
+<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"}"
+>
+Traceback (most recent call last):
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/views.py", line 27, in index
+    value_b = Client(nginx_addr, crt).roll_die()
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/api/client.py", line 27, in roll_die
+    return self.rpc.RollDie(api_pb2.RollDieRequest()).value
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 1166, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 996, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"}"
+>
+[17/Dec/2025 20:23:30] "POST / HTTP/1.1" 200 699
+<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"}"
+>
+Traceback (most recent call last):
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/views.py", line 27, in index
+    value_b = Client(nginx_addr, crt).roll_die()
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/api/client.py", line 27, in roll_die
+    return self.rpc.RollDie(api_pb2.RollDieRequest()).value
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 1166, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 996, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:14, grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"}"
+>
+[17/Dec/2025 20:23:31] "POST / HTTP/1.1" 200 699
+<_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+Traceback (most recent call last):
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/views.py", line 27, in index
+    value_b = Client(nginx_addr, crt).roll_die()
+  File "/home/aleksey/Documents/devops/python_go_grpc/client/api/client.py", line 27, in roll_die
+    return self.rpc.RollDie(api_pb2.RollDieRequest()).value
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 1166, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/aleksey/Documents/devops/python_go_grpc/venv/lib/python3.13/site-packages/grpc/_channel.py", line 996, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:9445: Failed to connect to remote host: connect: Connection refused (111)", grpc_status:14}"
+>
+[17/Dec/2025 20:23:31] "POST / HTTP/1.1" 200 699
